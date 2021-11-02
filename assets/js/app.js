@@ -29,3 +29,13 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
+
+$(document).ready(function() {
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 500) {
+      $('nav').addClass('solid');
+    } else {
+      $('nav').removeClass('solid');
+    }
+  })
+})
